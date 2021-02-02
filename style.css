@@ -49,11 +49,12 @@ main {
 }
 
 .graphic-bg {
-  background-color: #008FF5;
+  background: url(./svgGraphics/bg.svg);
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   /* clip-path: polygon(35% 0, 21% 35%, 0 84%, 0 0); */
-  clip-path: polygon(0 0, 58% 0, 30% 39%, 0 80%);
+  /* clip-path: polygon(0 0, 58% 0, 30% 39%, 0 80%); */
   position: absolute;
   z-index: -1;
 }
