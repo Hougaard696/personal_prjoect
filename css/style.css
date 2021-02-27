@@ -15,11 +15,12 @@ html {
   font-family: 'Orienta', sans-serif;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 12fr;
-  gap: 4;
-  grid-template-rows: auto;
+ul {
+  list-style: none;
+}
+
+a a:visited a:active {
+  text-decoration: none;
 }
 
 :root {
@@ -27,12 +28,58 @@ html {
   --gray: #6C6F73;
   --black: ;
   --white: #FFFFFF;
+  --bg: #FBFAF7;
 }
 
-/* Global Variables */
+
+/* Grid Elements */
 /*///////////////////////*/
 
+.grid {
+  display: grid;
+  grid-template-columns: 12fr;
+  gap: 4;
+  grid-template-rows: auto;
+}
 
+/* Background Elements */
+/*///////////////////////*/
+
+.bg {
+  position: absolute;
+  background-image: url(../svg/bg.svg);
+  object-fit: cover;
+  z-index: -1;
+  background-color: var(--bg);
+}
+
+
+/* Nav Bar */
+/*///////////////////////*/
+
+.nav-bar {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  padding-right: 8rem;
+  color: var(--white);
+  font-size: 18rem;
+}
+
+
+/* Buttons */
+/*///////////////////////*/
+
+.btn {
+  color: var(--white);
+  text-align: center;
+  font-size: 12rem;
+  padding: 12rem;
+}
+
+/* Contact From */
+/*///////////////////////*/
 .roboto {
   font-family: 'Roboto Mono', monospace;
 }
+
