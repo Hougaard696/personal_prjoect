@@ -19,13 +19,14 @@ ul {
   list-style: none;
 }
 
-a a:visited a:active {
+a, a:visited, a:active {
   text-decoration: none;
+  color: var(--white);
 }
 
 :root {
   --primary: #2C97E3;
-  --gray: #6C6F73;
+  --grey: #6C6F73;
   --black: ;
   --white: #FFFFFF;
   --bg: #FBFAF7;
@@ -37,9 +38,35 @@ a a:visited a:active {
 
 .grid {
   display: grid;
-  grid-template-columns: 12fr;
-  gap: 4;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(12 ,1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-nav {
+  grid-column: 1 / 13;
+}
+
+.grid-logo {
+  grid-column: 9 / 12;
+  grid-row: 2 / 4;
+  align-self: center;
+  justify-self: center;
+}
+
+.grid-title {
+  grid-column: 9 / 12;
+  align-self: center;
+  justify-self: center;
+}
+
+.grid-graphic {
+  grid-column: 3 / 9;
+  grid-row: 4 / 8;
+}
+
+.grid-footer {
+  grid-column: 1 / 13;
 }
 
 /* Background Elements */
@@ -48,7 +75,7 @@ a a:visited a:active {
 .bg {
   position: absolute;
   background-image: url(../svg/bg.svg);
-  object-fit: cover;
+  background-repeat: no-repeat;
   z-index: -1;
   background-color: var(--bg);
 }
@@ -59,11 +86,13 @@ a a:visited a:active {
 
 .nav-bar {
   display: flex;
-  align-items: flex-start;
-  text-align: center;
-  padding-right: 8rem;
   color: var(--white);
-  font-size: 18rem;
+  font-size: 2.5rem;
+}
+
+.nav-bar > li {
+  padding-left: 7rem;
+  margin-top: 2rem;
 }
 
 
@@ -71,15 +100,58 @@ a a:visited a:active {
 /*///////////////////////*/
 
 .btn {
+  display: block;
   color: var(--white);
   text-align: center;
-  font-size: 12rem;
-  padding: 12rem;
+  font-size: 2rem;
+  padding: 1.3rem;
+  margin: 1.3rem;
+  background-color: var(--primary);
+  border-radius: 20px;
+  width: 35rem;
+}
+
+/* Main Content */
+/*///////////////////////*/
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: var(--grey);
+  margin: .8rem;
+}
+
+.logo {
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 
 /* Contact From */
 /*///////////////////////*/
+
 .roboto {
   font-family: 'Roboto Mono', monospace;
 }
 
+/* Footer */
+/*///////////////////////*/
+
+.footer {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2.5rem;
+  padding: 1.5rem;
+}
