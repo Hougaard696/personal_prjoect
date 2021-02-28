@@ -195,6 +195,18 @@ a, a:visited, a:active {
   width: 35rem;
 }
 
+.form-btn {
+  display: inline-block;
+  color: var(--white);
+  text-align: center;
+  font-size: 2rem;
+  padding: 1.3rem;
+  margin: 1.3rem 1.3rem 1.3rem 2rem;
+  background-color: var(--primary);
+  border-radius: 20px;
+  width: 35rem;
+}
+
 /* Main Content */
 /*///////////////////////*/
 
@@ -246,8 +258,65 @@ section > p {
 /* Contact From */
 /*///////////////////////*/
 
-.roboto {
+form {
   font-family: 'Roboto Mono', monospace;
+  font-size: 3rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+form > label {
+  display: block;
+}
+
+form > input {
+  display: block;
+  outline: none;
+  border: 0;
+  border-bottom: .01rem solid var(--black);
+  background-color: var(--bg);
+  font-family:inherit;
+  font-size: inherit;
+  margin: 1.3rem 0 1.3rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+form > input:focus {
+  display: block;
+  outline: none;
+  border: 0;
+  border-bottom: .01rem solid var(--black);
+  background-color: var(--bg);
+  font-family:inherit;
+  font-size: inherit;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+form > textarea {
+  display: block;
+  outline: none;
+  border: 0;
+  border-bottom: .01rem solid var(--black);
+  background-color: var(--bg);
+  font-family:inherit;
+  font-size: inherit;
+  margin: 1.3rem 0 1.3rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  text-decoration: solid underline var(--black) .02rem;
+}
+form > textarea:focus {
+  display: block;
+  outline: none;
+  border: 0;
+  border-bottom: .01rem solid var(--black);
+  background-color: var(--bg);
+  font-family:inherit;
+  font-size: inherit;
+  font-weight: 600;
+  margin-top: 2rem;
+  text-decoration: solid underline var(--black) .02rem;
 }
 
 /* Footer */
