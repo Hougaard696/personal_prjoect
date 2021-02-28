@@ -32,6 +32,12 @@ a, a:visited, a:active {
   --bg: #FBFAF7;
 }
 
+/* Utility Elements */
+/*///////////////////////*/
+
+.block-center {
+ display: block;
+}
 
 /* Grid Elements */
 /*///////////////////////*/
@@ -40,7 +46,7 @@ a, a:visited, a:active {
   display: grid;
   grid-template-columns: repeat(12 ,1fr);
   gap: 1rem;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(94px, auto);
 }
 
 .grid-nav {
@@ -57,16 +63,16 @@ a, a:visited, a:active {
 .grid-title {
   grid-column: 9 / 12;
   align-self: center;
-  justify-self: center;
 }
 
 .grid-graphic {
   grid-column: 3 / 9;
-  grid-row: 4 / 8;
+  grid-row: 4 / 6;
 }
 
 .grid-footer {
   grid-column: 1 / 13;
+  grid-row: 7;
 }
 
 /* Background Elements */
@@ -93,19 +99,24 @@ a, a:visited, a:active {
 .nav-bar > li {
   padding-left: 7rem;
   margin-top: 2rem;
+  position: relative;
 }
+
+/* .nav-bar > li:hover {
+
+} */
 
 
 /* Buttons */
 /*///////////////////////*/
 
 .btn {
-  display: block;
+  display: inline-block;
   color: var(--white);
   text-align: center;
   font-size: 2rem;
   padding: 1.3rem;
-  margin: 1.3rem;
+  margin: 1.3rem 1.3rem 1.3rem 6rem;
   background-color: var(--primary);
   border-radius: 20px;
   width: 35rem;
@@ -121,12 +132,12 @@ h2 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   text-align: center;
   padding: 1rem;
 }
 
-p {
+section > p {
   font-size: 2rem;
   text-align: center;
   padding: 1rem;
@@ -139,6 +150,9 @@ p {
   padding-bottom: 2rem;
 }
 
+.laptop {
+  margin-top: 7rem;
+}
 /* Contact From */
 /*///////////////////////*/
 
@@ -151,7 +165,6 @@ p {
 
 .footer {
   text-align: center;
-  font-size: 1.8rem;
-  margin: 2.5rem;
-  padding: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--black);
 }
