@@ -30,6 +30,7 @@ a, a:visited, a:active {
   --black: black;
   --white: #FFFFFF;
   --bg: #FBFAF7;
+  --red: #CF3434;
 }
 
 /* Utility Elements */
@@ -63,6 +64,11 @@ a, a:visited, a:active {
 
 .lift {
   margin-top: -1.6rem;
+}
+
+.error-message {
+  font-size: 1.8rem;
+  color: var(--red);
 }
 
 /* Grid Elements */
@@ -203,7 +209,7 @@ a, a:visited, a:active {
   width: 35rem;
 }
 
-.form-btn {
+.form-btn, .form-btn:focus, .form-btn:focus-visible{
   display: inline-block;
   color: var(--white);
   text-align: center;
@@ -213,6 +219,7 @@ a, a:visited, a:active {
   background-color: var(--primary);
   border-radius: 20px;
   width: 35rem;
+  border-style: none;
 }
 
 /* Main Content */
